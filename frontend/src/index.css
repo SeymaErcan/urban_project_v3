@@ -1,0 +1,48 @@
+/* TODO: Add sitewide styles */
+.review-button {
+    background-color: #007bff;
+    /* Blue color */
+    color: white;
+    border: none;
+    /* Remove default border */
+    border-radius: 25px;
+    /* Curvy button */
+    padding: 10px 20px;
+    /* Add padding for better touch area */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    /* Softer shadow */
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+}
+
+.review-button:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+.delete-review-modal-button {
+    background-color: #ff4757;
+    /* Red color for delete button */
+    color: white;
+    border: none;
+    /* Remove default border */
+    border-radius: 25px;
+    /* Curvy button */
+    padding: 5px 10px;
+    /* Adjust padding */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    /* Softer shadow */
+    width: 60px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+}
+
+.delete-review-modal-button:hover {
+    background-color: #c0392b;
+    /* Darker red on hover */
+}

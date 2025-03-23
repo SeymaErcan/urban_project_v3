@@ -1,0 +1,120 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Apply Poppins font to the entire document */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Modernized styling for the container */
+.create-spot-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #66b3ff, #007bff);
+    /* Light to bright blue gradient */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    /* White text for contrast */
+}
+
+/* Stylish horizontal rule */
+hr {
+    height: 2px;
+    background-color: #b0c4de;
+    /* Light steel blue */
+    width: 100%;
+    margin: 25px 0;
+    border: none;
+    opacity: 0.6;
+}
+
+/* Styling for form text */
+.create-spot-form p {
+    color: #007bff;
+    /* Bright blue */
+    font-weight: bold;
+}
+
+/* Input styling */
+.image-url-input input {
+    margin-bottom: 25px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Button section styling */
+.create-spot-button-section {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+/* Button styling with shine and move effect */
+#create-spot-button {
+    background: linear-gradient(135deg, #42a1ec, #007bff);
+    /* Bright blue gradient */
+    color: white;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+
+#create-spot-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: skewX(-20deg);
+    transition: 0.7s;
+}
+
+/* Shine effect on hover */
+#create-spot-button:hover::before {
+    left: 120%;
+    transition: 0.7s;
+}
+
+/* Move effect on hover */
+#create-spot-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+#create-spot-button:active {
+    transform: translateY(1px);
+}
+
+/* Responsive adjustments for mobile screens */
+@media screen and (min-width: 375px) and (max-width: 800px) {
+    .create-spot-container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    #create-spot-button {
+        width: 100%;
+    }
+}

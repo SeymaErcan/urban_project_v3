@@ -1,0 +1,118 @@
+/* .manage-spots-page-container {
+  padding: 20px;
+  background-image: url('/images/background.jpg');
+
+  background-size: cover;
+
+  background-repeat: no-repeat;
+
+  background-position: center;
+
+
+} */
+
+.manage-spots-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.create-spot-button {
+  background-color: #007bff;
+  /* Blue color */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  /* Curvy button */
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-spot-button:hover {
+  background-color: #0056b3;
+  /* Darker blue on hover */
+}
+
+.all-spots-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Ensure three spots in a row */
+  gap: 20px;
+  /* Space between grid items */
+}
+
+.spot-card {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  /* Curvy card */
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.spot-card:hover {
+  transform: scale(1.02);
+  /* Scale effect on hover */
+}
+
+.spot-link {
+  text-decoration: none;
+  color: inherit;
+  /* Inherit color */
+}
+
+.spot-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.spot-info {
+  padding: 15px;
+}
+
+.spot-rating {
+  color: #ffcc00;
+  /* Gold color for stars */
+  margin: 5px 0;
+}
+
+.update-delete-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+.delete-review-modal-button {
+  background-color: #ff4757;
+  /* Red for delete button */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  /* Curvy button */
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-review-modal-button:hover {
+  background-color: #c0392b;
+  /* Darker red on hover */
+}
+
+@media (max-width: 800px) {
+  .all-spots-container {
+    grid-template-columns: repeat(2, 1fr);
+    /* Two columns for medium screens */
+  }
+}
+
+@media (max-width: 500px) {
+  .all-spots-container {
+    grid-template-columns: 1fr;
+    /* One column for small screens */
+  }
+}

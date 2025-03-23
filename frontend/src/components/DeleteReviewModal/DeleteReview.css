@@ -1,0 +1,49 @@
+.delete-review-button {
+    margin: 20px;
+    height: 40px;
+    width: 100%;
+    background-color: #007bff;
+    /* Changed to blue */
+    color: white;
+    /* White text */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    /* Softer shadow */
+    border: none;
+    /* Remove default border */
+    border-radius: 25px;
+    /* Curvy button */
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+}
+
+.delete-review-button:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+.keep-review-button {
+    margin: 0px 20px 20px 20px;
+    height: 40px;
+    width: 100%;
+    background-color: #6c757d;
+    /* Changed to a blue-gray color */
+    color: white;
+    /* White text */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    /* Softer shadow */
+    border: none;
+    /* Remove default border */
+    border-radius: 25px;
+    /* Curvy button */
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+}
+
+.keep-review-button:hover {
+    background-color: #5a6268;
+    /* Darker gray on hover */
+}
