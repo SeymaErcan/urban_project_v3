@@ -1,13 +1,17 @@
 const express = require('express')
 const bcrypt = require('bcryptjs');
-
+//UTILITY IMPORTS
 const { setTokenCookie, requireAuth } = require('../../utils/auth');
-const { User } = require('../../db/models');
 const { check } = require('express-validator');
 const { handleValidationErrors } = require('../../utils/validation');
 
+//SEQUELIZE IMPORTS
+const { User } = require('../../db/models');
+
 const router = express.Router();
 
+
+//PROTECT THE INCOMING DATA FOR THE SIGN UP ROUTE
 const validateSignup = [
   check('email')
     .exists({ checkFalsy: true })
